@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 
+
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AnimalComponent } from './components/animal/animal.component';
 import { ChallengesComponent } from './components/challenges/challenges.component';
@@ -14,6 +16,8 @@ import { NumbersComponent } from './components/numbers/numbers.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StatisticComponent } from './components/statistic/statistic.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AdminComponent } from './components/admin/admin.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,11 +31,14 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     NumbersComponent,
     SignupComponent,
-    StatisticComponent
+    StatisticComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
