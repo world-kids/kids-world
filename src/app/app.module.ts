@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { AnimalComponent } from './components/animal/animal.component';
 import { ChallengesComponent } from './components/challenges/challenges.component';
@@ -12,6 +13,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NumbersComponent } from './components/numbers/numbers.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StatisticComponent } from './components/statistic/statistic.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { StatisticComponent } from './components/statistic/statistic.component';
     StatisticComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
