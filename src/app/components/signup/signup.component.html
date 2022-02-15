@@ -1,0 +1,19 @@
+<div class="container">
+    <section>
+      <form class="logg" #userPost="ngForm"  (ngSubmit)="onSubmit(userPost.value)">
+        <label>
+          <input name="username" ngModel id="name" type="text" required />
+          <div class="label-text">Username</div>
+        </label>
+        <label>
+          <input type="email" name="email"  ngModel id="email" required />
+          <div class="label-text">Email</div>
+        </label>
+        <label>
+          <input type="password" name="password"  ngModel id="phone" required />
+          <div class="label-text">Password</div>
+        </label>
+        <button type="submit" value="Submit">Submit</button>
+      </form>
+    </section>
+  </div>
