@@ -7,6 +7,10 @@ import {ColorsComponent} from '../app/components/colors/colors.component'
 import { RouterModule, Routes } from '@angular/router';
 import {AnimalComponent} from '../app/components/animal/animal.component'
 import {AdminComponent} from '../app/components/admin/admin.component'
+import {FruitsComponent} from '../app/components/fruits/fruits.component'
+import {NumbersComponent} from '../app/components/numbers/numbers.component'
+
+
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -15,7 +19,9 @@ const routes: Routes = [
   {path: 'statistic', component:StatisticComponent},
   {path: 'colors', component:ColorsComponent},
   {path: 'animal', component:AnimalComponent},
-  {path: 'admin', component:AdminComponent}
+  {path: 'admin', component:AdminComponent},
+  {path: 'fruits', component:FruitsComponent},
+  {path: 'numbers', component:NumbersComponent},
 ];
 
 @NgModule({
