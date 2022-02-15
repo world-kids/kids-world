@@ -44,9 +44,9 @@ var updates = (req, res) => {
 };
 var addKids = function (req, res) {
     var userData = {
+        username: req.body.username,
         email: req.body.email,
         password: req.body.password,
-        username: req.body.username
         
     };
     // sendConfirmation(userData.email, userData.firstName, userData.lastName);
