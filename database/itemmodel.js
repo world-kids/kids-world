@@ -6,10 +6,10 @@ const Salt = 10
 
 
 const kidSchema= new mongoose.Schema({
+    username:String,
     email:String,
     password:String,
-    username:String,
-    score:Number
+    score:Number,
 })
 const adminSchema= new mongoose.Schema({
  question:String,
