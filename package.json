@@ -8,7 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "nodemon server/routes/index.js"
-
   },
   "private": true,
   "dependencies": {
