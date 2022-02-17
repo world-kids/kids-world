@@ -11,7 +11,6 @@ import {FruitsComponent} from '../app/components/fruits/fruits.component'
 import {NumbersComponent} from '../app/components/numbers/numbers.component'
 import {LoginComponent} from '../app/components/login/login.component';
 import {SignupComponent} from '../app/components/signup/signup.component';
-import {XoComponent} from '../app/components/xo/xo.component';
 import { AuthGuard } from './auth.guard';
 import { SignupGuard } from './signup.guard';
 
@@ -27,7 +26,6 @@ const routes: Routes = [
   {path: 'numbers', component:NumbersComponent,canActivate:[AuthGuard]},
   {path: 'login', component:LoginComponent,canActivate:[SignupGuard]},
   {path: 'signup', component:SignupComponent,canActivate:[SignupGuard]},
-  {path: 'xo', component:XoComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({

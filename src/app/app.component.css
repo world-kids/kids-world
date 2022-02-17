@@ -56,15 +56,15 @@ nav ul li a:hover {
   line-height: 80px;
   font-size: 25px;
 }
-* {
+/* * {
   padding: 0;
   margin: 0;
-}
+} */
 
 
-body {
+/* body {
   font-family: monospace;
-}
+} */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -76,6 +76,7 @@ body {
    /* background-color: rgba(255, 228, 196, 0.603); */
     margin-left: 0px;
     margin-top: 4px;
+
     /* border-radius: 5px; */
     /* background: rgba(189, 17, 17, 0.61); */
     /* box-shadow: 0 8px 32px 0 rgba(14, 2, 37, 0.705); */
@@ -164,3 +165,4 @@ body {
   color:#aaa;
   margin-bottom:0;
 }
+

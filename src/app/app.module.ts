@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './components/admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { XoComponent } from './components/xo/xo.component';
+import { TetrisComponent } from './components/tetris/tetris.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { XoComponent } from './components/xo/xo.component';
     SignupComponent,
     StatisticComponent,
     AdminComponent,
-    XoComponent
+    XoComponent,
+    TetrisComponent
   ],
   imports: [
     BrowserModule,
