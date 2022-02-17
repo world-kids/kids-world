@@ -11,19 +11,21 @@ import {FruitsComponent} from '../app/components/fruits/fruits.component'
 import {NumbersComponent} from '../app/components/numbers/numbers.component'
 import {LoginComponent} from '../app/components/login/login.component';
 import {SignupComponent} from '../app/components/signup/signup.component';
+import { AuthGuard } from './auth.guard';
+import { SignupGuard } from './signup.guard';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'challenges', component:ChallengesComponent},
-  {path: 'contact-us', component:ContactUsComponent},
-  {path: 'statistic', component:StatisticComponent},
-  {path: 'colors', component:ColorsComponent},
-  {path: 'animal', component:AnimalComponent},
-  {path: 'admin', component:AdminComponent},
-  {path: 'fruits', component:FruitsComponent},
-  {path: 'numbers', component:NumbersComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'signup', component:SignupComponent}
+  {path: 'home', component: HomeComponent,canActivate:[AuthGuard]},
+  {path: 'challenges', component:ChallengesComponent,canActivate:[AuthGuard]},
+  {path: 'contact-us', component:ContactUsComponent,canActivate:[AuthGuard]},
+  {path: 'statistic', component:StatisticComponent,canActivate:[AuthGuard]},
+  {path: 'colors', component:ColorsComponent,canActivate:[AuthGuard]},
+  {path: 'animal', component:AnimalComponent,canActivate:[AuthGuard]},
+  {path: 'admin', component:AdminComponent,canActivate:[AuthGuard]},
+  {path: 'fruits', component:FruitsComponent,canActivate:[AuthGuard]},
+  {path: 'numbers', component:NumbersComponent,canActivate:[AuthGuard]},
+  {path: 'login', component:LoginComponent,canActivate:[SignupGuard]},
+  {path: 'signup', component:SignupComponent,canActivate:[SignupGuard]}
 ];
 
 @NgModule({
