@@ -1,4 +1,36 @@
-<p>colors works!</p>
-<div>
-    <img src="https://i.natgeofe.com/n/6490d605-b11a-4919-963e-f1e6f3c0d4b6/sumatran-tiger-thumbnail-nationalgeographic_1456276.jpg" >
+
+<div *ngIf="changeView===true ;then images else thescore"></div>
+<ng-template #images>
+<div *ngFor="let sugg of questions[index].suggestions" >
+
+    
+         <img src={{sugg.suggestion}} (click)="score(sugg)" />  
+
 </div>
+</ng-template>
+<ng-template #thescore>
+    <div>
+        <div id="box">
+          {{ test() }}
+             
+          <div class="parent">
+         
+            <div>
+              <img id="img2" src={{photo}} />
+            </div>
+  
+            <div>
+              <h1 id="p"></h1>
+            </div>
+  
+            <div>
+              <img
+                id="img1"
+                src="https://images-ext-2.discordapp.net/external/ARbyf1ozzv81gNLPyZpjCif2h9CEQKW5IFItT4jxywI/https/cdn3d.iconscout.com/3d/premium/thumb/two-number-4863651-4056297.png?width=433&height=433"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+</ng-template>
+
