@@ -14,7 +14,7 @@ export class ChallengesComponent implements OnInit {
   }
 
       page=0
-      count=4
+      count=5
       ball=true
       plane=true
       fish=true

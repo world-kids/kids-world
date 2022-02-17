@@ -20,6 +20,9 @@
     <ng-template [ngIf]="ball===true"> <div (click)="changeview()" >
         <img id="ball" (click)="dec()"  src="https://th.bing.com/th/id/R.a7dadf9e012cf71288a84896621e3695?rik=xOMLyuREEhiSNA&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2fn1654666.png&ehk=8cRq%2bRf0m1W6zVX%2fEbZeWV3aBHIJMlZ24BVcMBJ2OmQ%3d&risl=&pid=ImgRaw&r=0" alt="">
       </div></ng-template>
+      <ng-template [ngIf]="ball===false"><div (click)="changeview()" >
+        <img id="ball"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
     <ng-template> <div (click)="changeview()" [ngIf]="ball===false">
         <img id="ball"  src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
       </div></ng-template>
