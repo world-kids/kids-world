@@ -18,6 +18,7 @@ import { StatisticComponent } from './components/statistic/statistic.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './components/admin/admin.component';
 import { FormsModule } from '@angular/forms';
+import { XoComponent } from './components/xo/xo.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     NumbersComponent,
     SignupComponent,
     StatisticComponent,
-    AdminComponent
+    AdminComponent,
+    XoComponent
   ],
   imports: [
     BrowserModule,
