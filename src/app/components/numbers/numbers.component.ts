@@ -11,6 +11,7 @@ export class NumbersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   changeView=true
   count=0
   index = 0
