@@ -1,6 +1,6 @@
 <div class="container">
     <section>
-      <form class="logg" #userPost="ngForm"  (ngSubmit)="onSubmit(userPost.value)">
+      <form class="logg" #userPost="ngForm"  (ngSubmit)="onpost(userPost.value)">
         <label>
           <input type="email" name="email" ngModel id="email" required />
           <div class="label-text">Email</div>
