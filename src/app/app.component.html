@@ -9,6 +9,11 @@
       <li><a routerLink="/challenges" routerLinkActive="active">challenges</a></li>
       <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
       <li><a routerLink="/statistic" routerLinkActive="active">statistic</a></li>
+      <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
+        <li *ngIf="check()===false ;then out else in"></li>
+       <ng-template #out><li><button (click)="login()">Log in</button>
+        <button (click)="signup()" >Sign up</button></li></ng-template>
+    <ng-template #in ><button (click)="logouttt()">Log out</button></ng-template>
     </ul>
   </nav>
 
