@@ -1,0 +1,138 @@
+#ya{
+    margin-bottom: 50px;
+    
+  }
+  #start{
+    color: aliceblue;
+     animation: shine 2s forwards, blink 3s 2s infinite;
+     color: rgba(15, 17, 20, 0.75); font-family: 'Droid serif', serif; font-size: 36px; font-weight:bolder; font-style:normal; line-height: 44px; margin: 0 0 12px; text-align: center;
+    
+  }
+  #rend{
+    height: 700px;
+    width: 1500px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-left: 200px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background: rgba(241, 241, 239, 0.644);
+    box-shadow: 0 8px 32px 0 rgba(14, 2, 37, 0.705);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(15, 4, 44, 0.18);
+  }
+  #arrow{
+    height: 100px;
+    margin-right: -1100px;
+    margin-top: 220px ;
+    padding: 0px;
+  }
+  #arrowback{
+    height: 100px;
+    margin-left: -300px;
+    margin-top: -420px ;
+      -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #pac{
+    margin-bottom: 3cm;
+  }
+  #game{
+    height: 450px;
+    width: 450px;
+    margin-top: -270px;
+    margin-left: -500px;
+  }
+  #gamee{
+     height: 450px;
+    width: 450px;
+    margin-top: -520px;
+    margin-left: 500px;
+    margin-bottom: 18px;
+  }
+  #ball{
+    width: 50px;
+    height: 50px;
+    margin-top: -800px;
+    margin-bottom: 250px;
+    margin-left: 850px;
+  }
+  #plane{
+    width: 40px;
+    height: 20px;
+    margin-top: -800px;
+    margin-bottom: 470px;
+    margin-left: 400px;
+    
+  }
+  #fish{
+  width: 40px;
+  height: 40px;
+  margin-top: -1400px;
+  margin-bottom: 230px;
+  margin-left: 130px;
+    
+  }
+  #bee{
+    width: 60px;
+  height: 60px;
+  margin-top: -1800px;
+  margin-bottom: 300px ;
+  margin-left: 450px;
+    
+  }
+  #tweet{
+     width: 20px;
+  height: 20px;
+  margin-top: -1200px;
+  margin-bottom: 480px ;
+  margin-left: 150px;
+  }
+  #diff{
+    margin-top: -40px;
+    background: rgba(135, 243, 11, 0.863);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  #blue{
+    height: 300px;
+    width: 300px;
+    color: blueviolet;
+    /* background-color: #e22525; */
+    margin-left: 400px;
+    border-radius: 5px;
+    font-size: x-large;
+  }
+  #green{
+    height: 300px;
+    width: 300px;
+    color: rgb(0, 2, 122);
+    /* background-color: #e22525; */
+    /* margin-left: 400px; */
+    border-radius: 5px;
+    font-size: x-large;
+    margin-top: -500px;
+    margin-left: 700px;
+  }
+  #yellow{
+    height: 300px;
+    width: 300px;
+    color: rgb(11, 241, 11);
+    /* background-color: #e22525; */
+    margin-left: 400px;
+    border-radius: 5px;
+    font-size: x-large;
+    margin-top: -500px;
+  }
+  #red{
+    height: 300px;
+    width: 300px;
+    color: rgb(255, 0, 0);
+    /* background-color: #e22525; */
+    margin-left: 700px;
+    border-radius: 5px;
+    font-size: x-large;
+    margin-top: -100px;
+  }
+  
