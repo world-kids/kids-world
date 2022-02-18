@@ -62,7 +62,13 @@ questions= [
   
 ]
 
-
+playAudio(){
+  let audio=new Audio()
+  audio.src=this.sound[this.index]
+  audio.load()
+  audio.play()
+}
+sound=["../../../assets/sound/colors/red.mp3","../../../assets/sound/colors/orange.mp3"]
   score(i:any){
     
     

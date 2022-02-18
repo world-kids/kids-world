@@ -11,7 +11,13 @@ export class NumbersComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+  playAudio(){
+    let audio=new Audio()
+    audio.src=this.sound[this.index]
+    audio.load()
+    audio.play()
+  }
+  sound=["../../../assets/sound/numbers/seven.mp3","../../../assets/sound/numbers/seven.mp3","../../../assets/sound/numbers/four.mp3"]
   changeView=true
   count=0
   index = 0
@@ -73,11 +79,12 @@ export class NumbersComponent implements OnInit {
           {
             suggestion:
               "https://images-ext-1.discordapp.net/external/GqMHGoFPwPHrmi28WDpz54lrzjSe6Scsi8Toj-G3nz4/https/cdn3d.iconscout.com/3d/premium/thumb/seven-number-4863644-4056290.png?width=433&height=433",
-            correct: true,
-          },
-          {
-            suggestion:
+            },
+            {
+              suggestion:
               "https://images-ext-2.discordapp.net/external/bqlYwU1oGL3swILLp2qBksk2Bj7Te2UmswRzMh_4Iog/https/cdn3d.iconscout.com/3d/premium/thumb/three-number-4863643-4056289.png?width=433&height=433",
+              correct: true,
+
           },
           {
             suggestion:

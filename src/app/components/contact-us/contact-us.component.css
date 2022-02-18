@@ -2,6 +2,10 @@ svg {
 	height: 23rem;
 	margin-right: 4rem;
 }
+#body{
+  background-color: #f2f6f8;
+  padding: 0px;
+}
 
 #envelope {
   animation: float 2s ease-in-out infinite;

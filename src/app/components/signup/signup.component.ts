@@ -50,6 +50,4 @@ console.warn(data)
       }, 3000);
     })
   }
-  
-
 }

@@ -19,6 +19,12 @@ const adminSchema= new mongoose.Schema({
  forthAnswer:Object,
  category:String,
 })
+const storySchema=new mongoose.Schema({
+  title:String,
+  image:String,
+  text:String,
+  sound:String,
+})
 
 
 kidSchema.pre("save", function (next) {
@@ -47,4 +53,5 @@ kidSchema.pre("save", function (next) {
 
 const User= mongoose.model("User",kidSchema)
 const Admin= mongoose.model("Admin",adminSchema)
-module.exports = {User,Admin};
+const Story=mongoose.model("story",storySchema)
+module.exports = {User,Admin,Story};
