@@ -1,174 +1,86 @@
 <div>
-  <div id="rend">
-    <ng-template [ngIf]="page === 0"
-      ><div>
-        <div>
-          <h1 id="start" onclick="clicked">Challenges</h1>
-        </div>
+    
+    <div id="rend">
+      <ng-template [ngIf]="page===0" ><div >
+      <div >
+        <h1 id="start" onclick="clicked">Challenges</h1>
+      </div>
+      
+        <img (click)="changepage()" id="arrow" src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt=""> <img id="arrowback" src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="">
+     
+      <div >
+        <img id="game" src="https://i0.wp.com/4hdwall.com/wp-content/uploads/2017/12/Wallpapers-of-cartoons-kids.jpg" alt="">
+      </div>
+      
+      <div>
+        <img id="gamee" src="https://i0.wp.com/4hdwall.com/wp-content/uploads/2017/12/Wallpapers-of-cartoons-kids.jpg" alt="">
+      
+      </div>
+      
+    <ng-template [ngIf]="ball===true"> <div (click)="changeview()" >
+        <img id="ball" (click)="dec()"  src="https://th.bing.com/th/id/R.a7dadf9e012cf71288a84896621e3695?rik=xOMLyuREEhiSNA&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2fn1654666.png&ehk=8cRq%2bRf0m1W6zVX%2fEbZeWV3aBHIJMlZ24BVcMBJ2OmQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+      </div></ng-template>
+      <ng-template [ngIf]="ball===false"><div (click)="changeview()" >
+        <img id="ball"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+    <ng-template> <div (click)="changeview()" [ngIf]="ball===false">
+        <img id="ball"  src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+      
+    <ng-template [ngIf]="plane===true"> <div (click)="changeviewplane()" >
+        <img id="plane" (click)="dec()"  onclick="clicked" src="https://th.bing.com/th/id/R.8e179ce220fc7bc665ee5a52b805fff0?rik=m2rxjuKqYPlOEw&riu=http%3a%2f%2fclipartmag.com%2fimages%2fairplane-cartoon-png-31.png&ehk=UznDZgGbjn%2bowoNK4e09WJPEkCrdyNCVHqy90CU2log%3d&risl=&pid=ImgRaw&r=0" alt="">
+      </div></ng-template>
+    <ng-template [ngIf]="plane===false"><div (click)="changeview()" >
+        <img id="plane"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+     
+    <ng-template [ngIf]="fish===true"><div  (click)="changeviewfish()" >
+        <img id="fish" (click)="dec()"  onclick="clicked" src="https://th.bing.com/th/id/R.3512473630c9a3720fff5307436d8ab7?rik=WoyHRCXKBvhImA&riu=http%3a%2f%2fwww.freepngclipart.com%2fdownload%2ffish%2f83626-cute-fish-vector-marine-cartoon-png-download-free.png&ehk=5eFMnn%2f%2bueenj4AHTrW5UEMnZpWQjfpsaDgMffYyP%2fU%3d&risl=&pid=ImgRaw&r=0" alt="">
+      </div></ng-template>
+    <ng-template [ngIf]="fish===false">  <div  (click)="changeviewfish()" >
+        <img id="fish"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+      
+     
+    <ng-template [ngIf]="bee===true"><div  (click)="changeviewbee()" >
+        <img id="bee" (click)="dec()"  onclick="clicked" src="https://www.stickers-factory.com/media/catalog/product/cache/1/image/363x/040ec09b1e35df139433887a97daa66f/2/1/21673_00.png" alt="">
+      </div></ng-template>
+    <ng-template [ngIf]="bee===false"><div  (click)="changeviewbee()" >
+        <img id="bee"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+      
+    
+    <ng-template [ngIf]="tweet===true"> <div  (click)="changeviewtweet()" >
+        <img id="tweet" (click)="dec()"  onclick="clicked" src="https://pngimg.com/uploads/twitter/twitter_PNG37.png" alt="">
+      </div></ng-template>
+    <ng-template [ngIf]="tweet===false"> <div  (click)="changeviewtweet()" >
+        <img id="tweet"   onclick="clicked" src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png" alt="">
+      </div></ng-template>
+      
+      <div id="diff">
+       <h1> MISSED: {{this.count}}</h1>
 
-        <img
-          (click)="changepage()"
-          id="arrow"
-          src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-          alt=""
-        />
-        <img
-          id="arrowback"
-          src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-          alt=""
-        />
+     </div>
+     
+     </div></ng-template>
+     </div>
+    <ng-template [ngIf]="page==1"><div >
+        
+    <a id="to" href="http://localhost:8080"><img id='ya' src="https://i1.sndcdn.com/artworks-000380296524-chzw5l-t500x500.jpg"/></a>
+  
+               <img (click)="changepage()" id="arrow" src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt=""> <img id="arrowback" (click)="previouspage()" src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="">
+         
+     </div></ng-template>
+     <div>
+      
 
-        <div>
-          <img
-            id="game"
-            src="https://i0.wp.com/4hdwall.com/wp-content/uploads/2017/12/Wallpapers-of-cartoons-kids.jpg"
-            alt=""
-          />
-        </div>
+    </div>
 
-        <div>
-          <img
-            id="gamee"
-            src="https://i0.wp.com/4hdwall.com/wp-content/uploads/2017/12/Wallpapers-of-cartoons-kids.jpg"
-            alt=""
-          />
-        </div>
-
-        <ng-template [ngIf]="ball === true">
-          <div (click)="changeview()">
-            <img
-              id="ball"
-              (click)="dec()"
-              src="https://th.bing.com/th/id/R.a7dadf9e012cf71288a84896621e3695?rik=xOMLyuREEhiSNA&riu=http%3a%2f%2fclipart-library.com%2fimage_gallery%2fn1654666.png&ehk=8cRq%2bRf0m1W6zVX%2fEbZeWV3aBHIJMlZ24BVcMBJ2OmQ%3d&risl=&pid=ImgRaw&r=0"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template [ngIf]="ball === false"
-          ><div (click)="changeview()">
-            <img
-              id="ball"
-              onclick="clicked"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template>
-          <div (click)="changeview()" [ngIf]="ball === false">
-            <img
-              id="ball"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-
-        <ng-template [ngIf]="plane === true">
-          <div (click)="changeviewplane()">
-            <img
-              id="plane"
-              (click)="dec()"
-              onclick="clicked"
-              src="https://th.bing.com/th/id/R.8e179ce220fc7bc665ee5a52b805fff0?rik=m2rxjuKqYPlOEw&riu=http%3a%2f%2fclipartmag.com%2fimages%2fairplane-cartoon-png-31.png&ehk=UznDZgGbjn%2bowoNK4e09WJPEkCrdyNCVHqy90CU2log%3d&risl=&pid=ImgRaw&r=0"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template [ngIf]="plane === false"
-          ><div (click)="changeview()">
-            <img
-              id="plane"
-              onclick="clicked"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-
-        <ng-template [ngIf]="fish === true"
-          ><div (click)="changeviewfish()">
-            <img
-              id="fish"
-              (click)="dec()"
-              onclick="clicked"
-              src="https://th.bing.com/th/id/R.3512473630c9a3720fff5307436d8ab7?rik=WoyHRCXKBvhImA&riu=http%3a%2f%2fwww.freepngclipart.com%2fdownload%2ffish%2f83626-cute-fish-vector-marine-cartoon-png-download-free.png&ehk=5eFMnn%2f%2bueenj4AHTrW5UEMnZpWQjfpsaDgMffYyP%2fU%3d&risl=&pid=ImgRaw&r=0"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template [ngIf]="fish === false">
-          <div (click)="changeviewfish()">
-            <img
-              id="fish"
-              onclick="clicked"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-
-        <ng-template [ngIf]="bee === true"
-          ><div (click)="changeviewbee()">
-            <img
-              id="bee"
-              (click)="dec()"
-              onclick="clicked"
-              src="https://www.stickers-factory.com/media/catalog/product/cache/1/image/363x/040ec09b1e35df139433887a97daa66f/2/1/21673_00.png"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template [ngIf]="bee === false"
-          ><div (click)="changeviewbee()">
-            <img
-              id="bee"
-              onclick="clicked"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-
-        <ng-template [ngIf]="tweet === true">
-          <div (click)="changeviewtweet()">
-            <img
-              id="tweet"
-              (click)="dec()"
-              onclick="clicked"
-              src="https://pngimg.com/uploads/twitter/twitter_PNG37.png"
-              alt=""
-            /></div
-        ></ng-template>
-        <ng-template [ngIf]="tweet === false">
-          <div (click)="changeviewtweet()">
-            <img
-              id="tweet"
-              onclick="clicked"
-              src="https://images-ext-1.discordapp.net/external/Tz6xk-4mnyGV454sZjRtCnLosRWff43ODF2RFP8Wf90/https/cdn3d.iconscout.com/3d/premium/thumb/check-4112732-3408773%400.png"
-              alt=""
-            /></div
-        ></ng-template>
-
-        <div id="diff">
-          <h1>MISSED: {{ this.count }}</h1>
-        </div>
-      </div></ng-template
-    >
+    
   </div>
-  <ng-template [ngIf]="page == 1"
-    ><div>
-      <a id="to" href="http://localhost:8080"
-        ><img
-          id="ya"
-          src="https://i1.sndcdn.com/artworks-000380296524-chzw5l-t500x500.jpg"
-      /></a>
 
-      <img
-        (click)="changepage()"
-        id="arrow"
-        src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-        alt=""
-      />
-      <img
-        id="arrowback"
-        (click)="previouspage()"
-        src="https://th.bing.com/th/id/R.33a1b7205342d728d9b5a70ed5e57308?rik=6R5w8cdKAe9dkQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fL%2fY%2fI%2fS%2fg%2fX%2fyellow-arrow-hi.png&ehk=HPyW0k%2bse2bHTrBdOcz3NrxElY%2f6xg65rCG%2baCtcwyY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-        alt=""
-      /></div
-  ></ng-template>
-  <div></div>
-</div>
 
-<!-- <a id="to" href="http://localhost:8080"><img id='ya' src="https://i1.sndcdn.com/artworks-000380296524-chzw5l-t500x500.jpg"/></a> -->
+
+<a id="to" href="http://localhost:8080"><img id='ya' src="https://i1.sndcdn.com/artworks-000380296524-chzw5l-t500x500.jpg"/></a>
+
+

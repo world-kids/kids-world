@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-// import { SpinnersAngularModule } from 'spinners-angular';
+
 @Component({
   selector: 'contact-us',
   templateUrl: './contact-us.component.html',
