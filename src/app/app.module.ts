@@ -18,7 +18,7 @@ import { StatisticComponent } from './components/statistic/statistic.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { StoriesComponent } from './components/storiess/stories.component';
-import { StoryComponent } from './components/story/story.component';
+
 
 
 @NgModule({
@@ -35,7 +35,7 @@ import { StoryComponent } from './components/story/story.component';
     SignupComponent,
     StatisticComponent,
     StoriesComponent,
-    StoryComponent,
+  
 
   ],
   imports: [

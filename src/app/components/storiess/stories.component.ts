@@ -6,15 +6,25 @@ import {SharedService} from '../../shared.service';;
   styleUrls: ['./stories.component.css']
 })
 export class StoriesComponent implements OnInit {
-text:any
 stories:any
+text:any
+sound:any
+title:any
   constructor(private Shared:SharedService) {
     this.Shared.getStories().subscribe((data)=>{
      console.warn(data)
     this.stories=data})
    }
-showText(text:any){
-  this.text=text
+showText(story:any){
+  this.text=story.text
+  this.sound=story.sound
+  this.title=story.title
+}
+playAudio(){
+  let audio=new Audio()
+  audio.src=this.sound
+  audio.load()
+  audio.play()
 }
 
   ngOnInit(): void {

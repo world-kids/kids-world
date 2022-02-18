@@ -1,5 +1,16 @@
+<div class="stori">
 <div *ngFor="let story of stories" >
 <img >
-<h1 (click)="showText(story.text)">{{story.title}}</h1>
+<h1 (click)="showText(story)">{{story.title}}</h1>
 </div>
+<h1>{{title}}</h1>
 <p>{{text}}</p>
+<ng-template [ngIf]="sound"><div 
+id="question"
+(click)="playAudio()"
+class="titleContainer title"
+>
+🔊
+</div>
+</ng-template>
+</div>
