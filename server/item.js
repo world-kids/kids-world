@@ -70,8 +70,35 @@ var getKid = function (req, res) {
         });
     });
 };
+var addStory=function(req,res){
+    var kidstory = {
+        title: req.body.title,
+        image: req.body.image,
+        text: req.body.text,
+        sound: req.body.sound,
+        
+    };
+    User.Story.create(kidstory, (err, data) => {
+        if (err) {
+            res.send("error");
+        } else {
+            res.send(data);
+        }
+    });
+}
+getStory=function(req,res){
+  User.Story.find({},(err,result)=>{
+   if(err){
+       console.log(err);
+   }else{
+       res.send(result)
+   }
+    })
+    
+    
+}
 
-module.exports = { addKids, updates, getKid,addQuizzByCategory,getQuizzByCategory };
+module.exports = { addKids, updates, getKid,addQuizzByCategory,getQuizzByCategory,addStory,getStory };
 
 
 

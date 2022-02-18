@@ -1,61 +1,36 @@
-#img1 {
-    margin-left: -600px;
-    margin-top: 90px;
-    width: 250px;
-    height: 250px;
-  }
-  #img2 {
-    width: 200px;
-    height: 200px;
-    margin-right: -600px;
-    margin-top: -130px;
-  }
-  #img {
-    width: 250px;
-    height: 250px;
-  }
-  #question {
-    font-size: 3cm;
-    cursor: pointer;
-  }
-  .answer {
-    display: inline;
-    font-size: 5cm;
-    padding-left: 0cm;
-    padding-right: 5cm;
-    margin-left: 4cm;
-    cursor: pointer;
-  }
-  #box {
-    height: 700px;
-    width: 1500px;
-    background-color: rgba(255, 228, 196, 0.603);
-    margin-left: 200px;
-    margin-top: 40px;
-    border-radius: 5px;
-    background: rgba(5, 5, 5, 0.61);
-    box-shadow: 0 8px 32px 0 rgba(14, 2, 37, 0.705);
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(15, 4, 44, 0.18);
-  }
-  .score {
-    color: white;
-    font-size: 40px;
-  }
-  #p {
-    width: 10px;
-    height: 200px;
-    background-color: white;
-    transform: rotate(18deg);
-    margin-left: 240px;
-  }
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 300px;
-  }
+body{
+  background-image: url("https://cdn.suwalls.com/wallpapers/digital-art/amazing-spring-nature-by-the-small-house-52550-2560x1440.jpg");
+  background-size: contain;
+}
+/* .imggg{
+ border: solid ;
+ height: 250px;
+ width: 250px;
+margin-left: 150px;
+}
+#imgs{
+width: 250px;
+width: 150px;
+margin-top: 20%;
+margin-left: 20%;
+
+} */
+#collum{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+padding: 5%;
+margin-left: 15%;
+background-color: rgba(31, 190, 230, 0.692);
+width: 1300px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+
+}
+
+  
+
+ 
