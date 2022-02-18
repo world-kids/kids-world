@@ -15,6 +15,13 @@ export class FruitsComponent implements OnInit {
 count=0
 index = 0
 photo=""
+playAudio(){
+  let audio=new Audio()
+  audio.src=this.sound[this.index]
+  audio.load()
+  audio.play()
+}
+sound=["../../../assets/sound/fruits/apple.mp3","../../../assets/sound/fruits/orange.mp3","../../../assets/sound/fruits/Cherry.mp3"]
   score(i:any){
     
     
