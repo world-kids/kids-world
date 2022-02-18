@@ -1,3 +1,11 @@
+<div id="collum">
+  <div
+  id="question"
+  (click)="playAudio()"
+  class="titleContainer title"
+>
+  🔊
+</div>
 <div *ngIf="changeView===true ;then images else thescore"></div>
 <ng-template #images>
 <div *ngFor="let sugg of questions[index].suggestions" >
@@ -32,3 +40,4 @@
         </div>
       </div>
 </ng-template>
+</div>

@@ -11,6 +11,13 @@ export class NumbersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  playAudio(){
+    let audio=new Audio()
+    audio.src=this.sound[this.index]
+    audio.load()
+    audio.play()
+  }
+  sound=["../../../assets/sound/numbers/seven.mp3","../../../assets/sound/numbers/seven.mp3","../../../assets/sound/numbers/four.mp3"]
   changeView=true
   count=0
   index = 0

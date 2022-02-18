@@ -82,7 +82,13 @@ questions= [
  
 ]
 
-
+playAudio(){
+  let audio=new Audio()
+  audio.src=this.sound[this.index]
+  audio.load()
+  audio.play()
+}
+sound=["../../../assets/sound/animals/lion.mp3","../../../assets/sound/animals/duck.mp3","../../../assets/sound/animals/butterfly.mp3"]
   score(i:any){
     
     

@@ -1,10 +1,17 @@
-
+<div id="collum">
+  <div
+  id="question"
+  (click)="playAudio()"
+  class="titleContainer title"
+>
+  🔊
+</div>
 <div *ngIf="changeView===true ;then images else thescore"></div>
 <ng-template #images>
-<div *ngFor="let sugg of questions[index].suggestions" >
+<div class="imggg" *ngFor="let sugg of questions[index].suggestions" >
 
     
-         <img src={{sugg.suggestion}} (click)="score(sugg)" />  
+         <img id="imgs" src={{sugg.suggestion}} (click)="score(sugg)" />  
 
 </div>
 </ng-template>
@@ -33,4 +40,5 @@
         </div>
       </div>
 </ng-template>
+</div>
 
