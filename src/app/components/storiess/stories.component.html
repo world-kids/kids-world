@@ -1,16 +1,14 @@
-<div class="stori">
-<div *ngFor="let story of stories" >
-<img >
-<h1 (click)="showText(story)">{{story.title}}</h1>
-</div>
-<h1>{{title}}</h1>
-<p>{{text}}</p>
-<ng-template [ngIf]="sound"><div 
-id="question"
-(click)="playAudio()"
-class="titleContainer title"
->
-🔊
-</div>
-</ng-template>
+<div id="body">
+  <div class="stori">
+    <div *ngFor="let story of stories">
+      <img class="img" src="{{ story.image }}" />
+      <h1 class="title" (click)="showText(story)">{{ story.title }}</h1>
+    </div>
+    <h1 class="title2">{{ title }}</h1>
+    <p class="text">{{ text }}</p>
+    <ng-template [ngIf]="sound"
+      >
+      <img (click)="playAudio()" class="sound" src="https://th.bing.com/th/id/R.01265cda0fc9bc1f584d8fff08205e9c?rik=oJB1YM6h1g3eyQ&riu=http%3a%2f%2fpngimg.com%2fuploads%2fsound%2fsound_PNG2.png&ehk=1IMOUBgb9HfNulr%2fQ5AadaeCzHSA7TUOqepVULZK2Yc%3d&risl=&pid=ImgRaw&r=0" >
+    </ng-template>
+  </div>
 </div>
