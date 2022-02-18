@@ -6,7 +6,6 @@ import {StatisticComponent} from '../app/components/statistic/statistic.componen
 import {ColorsComponent} from '../app/components/colors/colors.component'
 import {AnimalComponent} from '../app/components/animal/animal.component'
 import { RouterModule, Routes } from '@angular/router';
-import {AdminComponent} from '../app/components/admin/admin.component'
 import {FruitsComponent} from '../app/components/fruits/fruits.component'
 import {NumbersComponent} from '../app/components/numbers/numbers.component'
 import {LoginComponent} from '../app/components/login/login.component';
@@ -21,7 +20,6 @@ const routes: Routes = [
   {path: 'statistic', component:StatisticComponent,canActivate:[AuthGuard]},
   {path: 'colors', component:ColorsComponent,canActivate:[AuthGuard]},
   {path: 'animal', component:AnimalComponent,canActivate:[AuthGuard]},
-  {path: 'admin', component:AdminComponent,canActivate:[AuthGuard]},
   {path: 'fruits', component:FruitsComponent,canActivate:[AuthGuard]},
   {path: 'numbers', component:NumbersComponent,canActivate:[AuthGuard]},
   {path: 'login', component:LoginComponent,canActivate:[SignupGuard]},

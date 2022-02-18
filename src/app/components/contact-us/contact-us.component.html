@@ -9,6 +9,7 @@
 </form> -->
 
 <!-- //////////////////// -->
+<div id="body">
 <div class="container d-flex justify-content-center align-items-center">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
     <g id="Image">
@@ -806,13 +807,17 @@
       ></textarea>
     </div>
 
-    <!-- Submit btn -->
-    <div class="text-center">
-      <button type="submit" value="Send" class="btn btn-primary" tabIndex="-1">
-        Send message
-      </button>
-      <!-- <button></button> -->
-      <!-- <sa-spinner-dotted type="submit" value="Send" class="btn btn-primary" tabIndex="-1" [size]="90" [thickness]="158" [speed]="100" color="rgba(255, 146, 60, 1)" >Send message</sa-spinner-dotted> -->
-    </div>
-  </form>
+        <!-- Message -->
+        <div class="form-group message">
+            <textarea id="formMessage" name="message" class="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
+        </div>
+    
+        <!-- Submit btn -->
+        <div class="text-center">
+            <button  type="submit" value="Send" class="btn btn-primary" tabIndex="-1">Send message</button>
+            <!-- <button></button> -->
+            <!-- <sa-spinner-dotted type="submit" value="Send" class="btn btn-primary" tabIndex="-1" [size]="90" [thickness]="158" [speed]="100" color="rgba(255, 146, 60, 1)" >Send message</sa-spinner-dotted> -->
+        </div>
+</form>
+</div>
 </div>
