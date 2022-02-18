@@ -16,8 +16,8 @@ import { NumbersComponent } from './components/numbers/numbers.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StatisticComponent } from './components/statistic/statistic.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AdminComponent } from './components/admin/admin.component';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { FormsModule } from '@angular/forms';
     NumbersComponent,
     SignupComponent,
     StatisticComponent,
-    AdminComponent
+
   ],
   imports: [
     BrowserModule,

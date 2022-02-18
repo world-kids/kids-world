@@ -1,4 +1,4 @@
-
+/* 
 body{
   background-color: antiquewhite;
 }
@@ -6,14 +6,13 @@ div.container{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
 /* div.container{
      height: 100%;
      display: flex;
      align-items: center;
      justify-content: center;
-
     
    }
    .logg{
@@ -67,7 +66,9 @@ div.container{
      width: 400px;
    }
    /* the text floats up and turns white */
-   label input:focus + .label-text {
+
+   
+   /* label input:focus + .label-text {
      color: #F0F0F0;
      font-size: 13px;
      margin-top: 10px;
@@ -75,7 +76,7 @@ div.container{
      -ms-transform: translateY(-74px);
      -webkit-transform: translateY(-74px);
      transform: translateY(-74px);
-   }
+   } */
    /* the text floats up during form validation */
   /* label input:valid + .label-text {
      font-size: 13px;
@@ -115,6 +116,11 @@ body {
   background: #cc3367;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+#back{
+  background-color:rgb(255, 255, 255) ;
+  padding: 50px;
+  margin-top: 0px;
 }
 
 .panda {
@@ -349,6 +355,7 @@ h1 {
   transition: 0.3s;
   box-shadow: 0 50px #FF4081 inset;
   color: #fff;
+  margin-left: 80px ;
 }
 .btn:hover {
   box-shadow: 0 0 #FF4081 inset;
@@ -415,7 +422,7 @@ h1 {
   -moz-transition: linear 0.4s 0.6s;
   -o-transition: linear 0.4s 0.6s;
   -webkit-transition: linear 0.4s;
-  -webkit-transition-delay: 0.6s;
+  /* -webkit-transition-delay: 0.6s; */
   transition: linear 0.4s 0.6s;
 }
 .alert:after, .alert:before {

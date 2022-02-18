@@ -59,3 +59,18 @@
     grid-row-gap: 0px;
     margin-top: 300px;
   }
+  #collum{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 5%;
+  margin-left: 15%;
+  background-color: rgba(29, 29, 29, 0.356);
+  width: 1300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  
+  }
