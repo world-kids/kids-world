@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-
-
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AnimalComponent } from './components/animal/animal.component';
@@ -17,6 +14,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { StatisticComponent } from './components/statistic/statistic.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { StoriesComponent } from './components/storiess/stories.component';
+
 
 
 @NgModule({
@@ -32,6 +31,9 @@ import { FormsModule } from '@angular/forms';
     NumbersComponent,
     SignupComponent,
     StatisticComponent,
+    StoriesComponent,
+  
+
   ],
   imports: [
     BrowserModule,
